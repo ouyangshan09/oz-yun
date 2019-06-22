@@ -1,10 +1,10 @@
 
 const config = {
-    name: 'STARTER',
-    title: '项目启动器',
-    short_title: '启动器',
+    name: 'oz-yun',
+    title: 'oz云平台',
+    short_title: '云平台',
     protocol: 'https',
-    host: 'starter.ozz.com',
+    host: 'yun.ozz.com',
     port: 80
 };
 
