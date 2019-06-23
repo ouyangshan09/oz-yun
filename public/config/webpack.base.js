@@ -66,6 +66,10 @@ const config = {
 
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+        alias: {
+            '@oz': folderConfig.src,
+            '@config': folderConfig.config,
+        },
     },
 
     module: {
