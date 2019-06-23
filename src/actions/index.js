@@ -1,4 +1,4 @@
-import { createAction } from 'redux-actions';
+import { createAction } from '../utils/actionUtil';
 
 export const LOGIN = createAction('LOGIN', null, () => ({_meta: '登录业务'}));
 export const LOGOUT = createAction('LOGOUT', null, () => ({_meta: '登出业务'}));
