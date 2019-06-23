@@ -99,10 +99,6 @@ const config = {
             ],
         }, {
             test: /\.css$/,
-            include: [
-                folderConfig.src,
-                folderConfig.resource,
-            ],
             use: [
                 MiniCssExtractPlugin.loader,
                 cssLoader,
@@ -156,12 +152,12 @@ const config = {
             maxAsyncRequests: 8,
             automaticNameDelimiter: '--',
             cacheGroups: {
-                styles: {
-                    name: 'styles',
-                    test: /\.css$/,
-                    chunks: 'all',
-                    enforce: true,
-                },
+                // styles: {
+                //     name: 'styles',
+                //     test: /\.css$/,
+                //     chunks: 'all',
+                //     enforce: true,
+                // },
                 commons: {
                     chunks: 'all',
                     name: 'commons',

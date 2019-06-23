@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.LoginFrom {
+    :global {
+        .style {
+            color: brown;
+        }
+
+        .login-form-password {
+            float: right;
+        }
+
+        .login-form-button {
+            width: 100%;
+        }
+    }
+}

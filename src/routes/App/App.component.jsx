@@ -7,16 +7,7 @@ import {
 import { browerHistory } from '../../utils/history';
 import { Bussiness1 } from '../../components/Business1/Bussiness1.component';
 import { AuthorizeRoute } from '../Auth/Authorize.component';
-
-const AsyncComponent = React.lazy(() => import(/* webpackChunkName: "Login" */ '../../components/Login/Login.component'));
-
-const Test = () => {
-    return (
-        <React.Suspense fallback={() => <div>111</div>}>
-            <AsyncComponent />
-        </React.Suspense>
-    )
-}
+import { Login } from '../Login/Login.component';
 
 
 /**
@@ -28,7 +19,7 @@ export const App = props => {
         <Router history={browerHistory}>
             {/* 授权验证 */}
             <AuthorizeRoute exact path='/' component={Bussiness1} />
-            <Route path='/login' component={Test} />
+            <Route path='/login' component={Login} />
         </Router>
     )
 }
