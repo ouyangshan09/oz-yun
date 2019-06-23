@@ -6,8 +6,6 @@ import {
 } from 'react-router';
 import { browerHistory } from '../../utils/history';
 import { Bussiness1 } from '../../components/Business1/Bussiness1.component';
-import '../../utils/test1';
-import '../../utils/test2';
 
 const AsyncComponent = React.lazy(() => import(/* webpackChunkName: "Login" */ '../../components/Login/Login.component'));
 
