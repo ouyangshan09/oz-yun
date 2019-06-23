@@ -1,7 +1,5 @@
 import './Bussiness1.scss';
 import React from 'react';
-import '../../utils/test1';
-import  '../../utils/test2';
 
 /**
  * @param {object} props

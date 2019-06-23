@@ -12,7 +12,6 @@ const config = {
     scripts: path.join(root, 'scripts'),
     config: path.join(root, 'public', 'config'),
     resource: path.join(root, 'public', 'resource'),
-    deploy: '/',
 
     vendors: [
         'redux',

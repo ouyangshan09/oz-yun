@@ -3,6 +3,7 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpackMerge = require('webpack-merge');
 const folderConfig = require('./folderConfig');
+const projectConfig = require('./projectConfig');
 const baseConfig = require('./webpack.base');
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -15,7 +16,7 @@ module.exports = webpackMerge(baseConfig,  {
     },
 
     output: {
-        publicPath: folderConfig.deploy,
+        publicPath: projectConfig.deploy,
         path: folderConfig.build,
         filename: '[name].[contenthash].js',
         chunkFilename: '[id].[chunkhash].chunk.js',
