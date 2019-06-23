@@ -43,8 +43,8 @@ const options = {
 
 if (projectConfig.protocol === 'https') {
     options['https'] = {
-        key: fs.readFileSync(path.join(folderConfig.resource, '_wildcard.ozz.com+3-key.pem')),
-        cert: fs.readFileSync(path.join(folderConfig.resource, '_wildcard.ozz.com+3.pem')),
+        key: fs.readFileSync(path.join(folderConfig.resource, '_wildcard.ecaicn.com+3-key.pem')),
+        cert: fs.readFileSync(path.join(folderConfig.resource, '_wildcard.ecaicn.com+3.pem')),
     };
 }
 

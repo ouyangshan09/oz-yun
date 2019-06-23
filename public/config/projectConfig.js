@@ -4,8 +4,8 @@ const config = {
     title: 'oz云平台',
     short_title: '云平台',
     protocol: 'https',
-    host: 'yun.ozz.com',
-    api: 'yun-api.ozz.com',
+    host: 'yun.ecaicn.com',
+    api: 'cjyun-api.ecaicn.com',
     port: 80,
     deploy: '/',
 };
@@ -15,8 +15,8 @@ const devConfig = {
     title: 'oz云平台',
     short_title: '云平台',
     protocol: 'https',
-    host: 'yun.ozz.com',
-    api: 'dev-yun-api.ozz.com',
+    host: 'yun.ecaicn.com',
+    api: 'test-cjyun-api.ecaicn.com',
     port: 80,
     deploy: '/',
 };
