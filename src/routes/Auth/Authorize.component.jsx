@@ -19,7 +19,6 @@ import {
  * @param {object} props.component
 */
 export const AuthorizeRoute = props => {
-    const [pending, setPending] = useState(true);
     const [logged, setLogged] = useState(false);;
 
     useEffect(() => {
@@ -29,14 +28,8 @@ export const AuthorizeRoute = props => {
     }, [props]);
     
 
-    if (pending) {
-        return (
-            <div>Loading...</div>
-        )
-    }
-
     if (logged === false) {
-        <Redirect to='/login' />
+        return <Redirect to='/login' />
     }
 
     return (
