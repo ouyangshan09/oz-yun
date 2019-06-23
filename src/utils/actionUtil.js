@@ -15,5 +15,10 @@ export const createAction = (type, payloadCreator, metaCreator) => {
 
 /** 处理Action过程封装 */
 export const handleActions = (hanlders, initialState, option) => {
+    if (isFunction(initialState)) {
+        initialState = initialState();
+    } else {
+        initialState = fromJS(initialState);
+    }
     return handleStandActions(hanlders, initialState, option);
 }
