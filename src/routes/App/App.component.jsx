@@ -10,6 +10,7 @@ import { browerHistory } from '../../utils/history';
 import { Bussiness1 } from '../../components/Business1/Bussiness1.component';
 import { AuthorizeRoute } from '../Auth/Authorize.component';
 import { Login } from '../Login/Login.component';
+import { login } from '@/bussiness/login';
 
 /**
  * App路由
